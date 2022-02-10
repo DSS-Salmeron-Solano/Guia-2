@@ -37,7 +37,7 @@ $simbolos = [
 
 if(isset($_POST['submit']) && $_POST['submit'] == "Enviar"){
     echo "\t<tr class=\"odd\">\n";
-    echo "\t\t<td>\nCaracter\n</td>\n";
+    echo "\t\t<td>\nCaracter:\n</td>\n";
     extract($_POST);
     $dato_usuario = !empty($dato_usuario) ? $dato_usuario : "<a href=\"discusion_2.html\"> No ingreso ningún dato :(";
 
