@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/main.css">
     <title>El tipo de caracter</title>
 </head>
 <body>
@@ -32,24 +33,6 @@ $simbolos = [
     '%', '&',
 ];
 
-for ($i=0; $i < count($vocales); $i++) { 
-    if ($dato_usuario == $vocales[$i]) {
-        $resultado = "El dato ingresado es una vocal";
-        break;
-    }
-}
-for ($j=0; $j < count($numeros); $j++) { 
-    if ($dato_usuario === $numeros[$j]) {
-        $resultado ="El dato ingresado es un número";
-        break;
-    }
-}
-for ($k=0; $k < count($simbolos); $k++) { 
-    if ($dato_usuario == $simbolos[$k]){
-        $resultado = "El dato ingresado es un símbolo";
-        break;
-    }
-}
 
 
 if(isset($_POST['submit']) && $_POST['submit'] == "Enviar"){
@@ -57,6 +40,25 @@ if(isset($_POST['submit']) && $_POST['submit'] == "Enviar"){
     echo "\t\t<td>\nCaracter\n</td>\n";
     extract($_POST);
     $dato_usuario = !empty($dato_usuario) ? $dato_usuario : "<a href=\"discusion_2.html\"> No ingreso ningún dato :(";
+
+    for ($i=0; $i < count($vocales); $i++) { 
+        if ($dato_usuario == $vocales[$i]) {
+            $resultado = "El dato ingresado es una vocal";
+            break;
+        }
+    }
+    for ($j=0; $j < count($numeros); $j++) { 
+        if ($dato_usuario === $numeros[$j]) {
+            $resultado ="El dato ingresado es un número";
+            break;
+        }
+    }
+    for ($k=0; $k < count($simbolos); $k++) { 
+        if ($dato_usuario == $simbolos[$k]){
+            $resultado = "El dato ingresado es un símbolo";
+            break;
+        }
+    }
     echo "\t\t<td>\n" . $resultado . "\n</td>\n";
     echo "\t</tr>\n";
     echo "\t<tr>\n";
