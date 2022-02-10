@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    font-size: 2.5em;
+    text-align: center;
+}
+body{
+    background-image: url(../img/time.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 60vh;
+    margin: 10% auto;
+    background-color: rgba(230, 215, 215, 0.39);
+}
+form{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+input[type="submit"]{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    border: 2px solid black;
+    background: transparent;
+    padding: 5px 10px;
+    width: 100%;
+    border-radius: 15px;
+    color: #000;
+    transition: 0.5s;
+    font-size: 15px;
+}
+input[type="submit"]:hover{
+    background-color: black;
+    color: #fff;
+    transition: 0.5s;
+}
+input{
+   margin: 10px;
+}
+
+input[type="date"]{
+    height: 25px;
+    width: 60%;
+    font-size: 20px;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    border: 2px solid black;
+    background: transparent;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 15px;
+    color: #000;
+    transition: 0.5s; 
+    font-size: 15px;
+}
+a:hover{
+    background-color: black;
+    color: #fff;
+    transition: 0.5s;
+}
+
+#principal2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 60vh;
+    margin: 10% auto;
+    font-size: 25px;
+    background-color: rgba(230, 215, 215, 0.39);
+}
+
+
